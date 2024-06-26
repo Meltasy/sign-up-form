@@ -7,8 +7,82 @@
     <title>Sign-up Form</title>
 </head>
 <body>
+    <div class="img-container">
+        <img class="background" src="images/timo-volz-wgN1oO8Nex8-unsplash.jpg" alt="trail leading to the top of a green hill">
+        <div class="text-overlay">Photo by <a href="https://unsplash.com/fr/@magict1911?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Timo Volz</a> on <a href="https://unsplash.com/fr/photos/un-chemin-de-terre-menant-a-une-montagne-wgN1oO8Nex8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+        <div class="logo-overlay">
+            <img class="logo" src="images/abstract-2028265_640.png" alt="Behobie trail club logo">
+            <!-- <p>Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2028265">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2028265">Pixabay</a></p> -->
+            <div>
+                <h1>BTC</h1>
+                <p>Running with nature</p>
+            </div>
+        </div>
+    </div>
     <form action="/my-sign-up-form" method="post">
-        
+        <header>
+            <h1>Behobie Trail Club</h1>
+        </header>
+        <section class="content">
+            <section class="form-row">
+                <ul>
+                    <li>
+                        <label for="first-name">
+                            <span>First Name </span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Joe">
+                    </li>
+                    <li>
+                        <label for="last-name">
+                            <span>Last Name</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Bloggs" />
+                    </li>
+                </ul>
+            </section>
+            <section class="form-row">
+                <ul>
+                    <li>
+                        <label for="email">
+                            <span>Email</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="joe.bloggs@email.com" />
+                    </li>
+                    <li>
+                        <label for="phone">
+                            <span>Phone Number</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="tel" id="phone" name="phone" />
+                    </li>
+                </ul>
+            </section>
+            <section class="form-row">
+                <ul>
+                    <li>
+                        <label for="pwd">
+                            <span>Password</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="pwd" id="pwd" name="pwd" />
+                    </li>
+                    <li>
+                        <label for="pwd-confirm">
+                            <span>Confirm Password</span>
+                            <strong><span aria-label="required">*</span></strong>
+                        </label>
+                        <input type="pwd" id="pwd-confirm" name="pwd-confirm" />
+                    </li>
+                </ul>
+            </section>
+        </section>
+        </div>
+        <footer>
+            <button>Create Account</button>
+        </footer>
     </form>
 </body>
 </html>
