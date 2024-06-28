@@ -21,7 +21,7 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: calc(12px + 0.5vw);
+    font-size: calc(10px + 0.5vw);
     color: var(--primary-text-colour);
     display: flex;
     align-items: center;
@@ -150,7 +150,7 @@ img.logo {
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(8px + 0.5vw);
     color: var(--secondary-text-colour);
     font-weight: bold;
     background: rgb(255,255,255);
