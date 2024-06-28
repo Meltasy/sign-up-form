@@ -21,7 +21,10 @@
     </div>
     <form action="/my-sign-up-form" method="post">
         <header>
-            <h1>Behobie Trail Club</h1>
+            <h1>Béhobie Trail Club</h1>
+            <p>Do you like running on <em>trails</em>? Do you like feeling the wind on your face and listening to the birds tweeting around you?
+                Then come join our trail club here in Béhobie. We meet every Tuesday evening and Saturday morning for a run in the local hills.<br>
+                Sign up to find out  more!</p>
         </header>
         <section class="content">
             <section class="form-row">
@@ -31,14 +34,14 @@
                             <span>First Name </span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="first-name" name="first-name" placeholder="Joe">
+                        <input type="text" id="first-name" name="first-name" placeholder="Joe" maxlength="20" />
                     </li>
                     <li>
                         <label for="last-name">
                             <span>Last Name</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="last-name" name="last-name" placeholder="Bloggs" />
+                        <input type="text" id="last-name" name="last-name" placeholder="Bloggs" maxlength="20" />
                     </li>
                 </ul>
             </section>
@@ -49,14 +52,14 @@
                             <span>Email</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="email" id="email" name="email" placeholder="joe.bloggs@email.com" />
+                        <input type="email" id="email" name="email" placeholder="joe.bloggs@email.com" minlength="8" />
                     </li>
                     <li>
                         <label for="phone">
                             <span>Phone Number</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="tel" id="phone" name="phone" />
+                        <input type="tel" id="phone" name="phone" max="10" />
                     </li>
                 </ul>
             </section>
@@ -67,14 +70,14 @@
                             <span>Password</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="pwd" id="pwd" name="pwd" />
+                        <input type="pwd" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase letter, one lowercase letter, and have at least 8 characters." />
                     </li>
                     <li>
                         <label for="pwd-confirm">
                             <span>Confirm Password</span>
                             <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="pwd" id="pwd-confirm" name="pwd-confirm" />
+                        <input type="pwd" id="pwd-confirm" name="pwd-confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase letter, one lowercase letter, and have at least 8 characters." />
                     </li>
                 </ul>
             </section>
@@ -82,6 +85,7 @@
         </div>
         <footer>
             <button>Create Account</button>
+            <p>Already have an account? <a href="url">Login</a></p>
         </footer>
     </form>
 </body>
